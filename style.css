@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile and Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            width: 50%;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .profile-pic img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .about, .projects, .contact {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        p {
+            color: #7f8c8d;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact p, .projects ul {
+            font-size: 16px;
+        }
+
+        /* Button Styling */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            text-decoration: none;
+            color: white;
+            background-color: #3498db;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile-pic">
+            <img src="https://via.placeholder.com/100" alt="Profile Picture">
+        </div>
+
+        <div class="about">
+            <h2>About Me</h2>
+            <p>This is a brief introduction about me. I am a web developer with experience in HTML, CSS, and JavaScript.</p>
+        </div>
+
+        <div class="projects">
+            <h2>Projects</h2>
+            <a href="#" class="btn">Project 1 Title</a>
+            <a href="#" class="btn">Project 2 Title</a>
+        </div>
+
+        <div class="contact">
+            <h2>Contact</h2>
+            <a href="mailto:example@example.com" class="btn">Email Me</a>
+        </div>
+    </div>
+
+</body>
+</html>
